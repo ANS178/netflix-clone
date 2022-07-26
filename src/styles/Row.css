@@ -1,7 +1,7 @@
 
 
 .title {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
@@ -18,7 +18,7 @@
 
 .row_poster{
     width: 100%;
-    height: 250px;
+    max-height: 100px;
     object-fit: contain;
     margin-right: 10px;
     transition: transform .4s;
@@ -26,6 +26,13 @@
 }
 
 .row_poster:hover{
-    
     transform: scale(1.08);
+}
+
+.row_poster_large{
+    max-height: 250px;
+}
+
+.row_poster:hover{
+    transform: scale(1.10);
 }
