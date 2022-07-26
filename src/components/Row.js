@@ -35,7 +35,7 @@ const Row = ({title, fetchUrl, largePic}) => {
         if (trailerUrl){
             setUrl('')// closes the popup if its already open
         }else {
-            movieTrailer(movie?.name || '')
+            movieTrailer(movie?.name || movie?.title || movie?.original_name|| '')
             .then((url) =>{
                 const urlParams = new URLSearchParams(new URL(url).search); // to get everything after the ? in the URL
                 setUrl(urlParams.get('v'));
